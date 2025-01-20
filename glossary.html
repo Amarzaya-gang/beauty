@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <h1 style="color:black;">Contact Us</h1>
+        <nav>
+            <ul>
+                <div class="topnav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="beauty.html">Beauty</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="skincare.html">Skincare</a></li>
+                <li><a href="glossary.html">Glossary</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="glossary-item">
+            <h2><a href="beauty.html" style="color:black" class="glossary-word">Matte</a></h2>
+            <p>Matte - this finish is non-shiny and provides a bold, long-lasting color with a dry texture.</p>
+        </div>
+        <div class="glossary-item">
+            <h2><a href="beauty.html" style="color:black" class="glossary-word">Satin or Cream</a></h2>
+            <p>Satin - lipsticks have a soft sheen, balancing between matte and glossy, offering hydration and a comfortable wear.</p>
+        </div>
+        <div class="glossary-item">
+            <h2><a href="beauty.html" style="color:black" class="glossary-word">Glossy</a></h2>
+            <p>Glossy - refers to a finish that has a shiny, reflective quality.</p>
+        </div>
+        <div class="glossary-item">
+            <h2><a href="beauty.html" style="color:black" class="glossary-word">Sheer</a></h2>
+            <p>Sheer - lipsticks are lightweight and translucent, delivering a hint of color with a glossy finish.</p>
+        </div>
+        <div class="glossary-item">
+            <h2><a href="beauty.html" style="color:black" class="glossary-word">Health Benefits</a></h2>
+            <p>Proper skin care helps maintain the skin's barrier function, protecting against environmental pollutants, bacteria, and harmful UV rays. This can reduce the risk of skin infections and conditions like acne, eczema, and psoriasis.</p>
+        </div>
+        <div class="glossary-item">
+            <h2><a href="beauty.html" style="color:black" class="glossary-word">Aging Prevention</a></h2>
+            <p>Regular skin care can help slow down the signs of aging, such as wrinkles, fine lines, and age spots. Using products with antioxidants, moisturizers, and sun protection can promote a more youthful appearance.</p>
+        </div>
+        <div class="glossary-item">
+            <h2><a href="beauty.html" style="color:black" class="glossary-word">Hydration</a></h2>
+            <p>Keeping the skin well-hydrated is essential for maintaining its elasticity and overall health. Moisturizers help prevent dryness and flakiness, which can lead to irritation and discomfort.</p>
+        </div>
+        <div class="glossary-item">
+            <h2><a href="beauty.html" style="color:black" class="glossary-word">Improved Appearance</a></h2>
+            <p>A consistent skin care routine can enhance the skin's texture and tone, leading to a clearer, more radiant complexion. This can boost self-esteem and confidence.</p>
+        </div>
+        
+
+    
+  </main>
+  <style>
+  .glossary-word {
+    font-size: 24px;
+    color: #070707;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  .glossary-word:hover {
+    color: palevioletred;
+  }
+  
+  .glossary-word::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: palevioletred;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  .glossary-word:hover::after {
+    transform: scaleX(1);
+  }
+</style>
+    <footer>
+        <p>&copy; <span id="current-year"></span> My Website</p>
+    </footer>
+
+    <script>
+        document.getElementById("current-year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
