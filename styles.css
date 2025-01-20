@@ -1,0 +1,176 @@
+
+body{
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  
+}
+
+header {
+  background-image:url('https://t3.ftcdn.net/jpg/01/82/28/56/360_F_182285617_kfTIkRpFJ72awWcHnogPb5QfbBpgrERS.jpg');
+  padding: 10px 0;
+  text-align: center;
+  height: 100%; 
+  position: relative;
+  bottom: 0;
+  
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+  
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+main {
+  
+  background-image:url('https://images.wallpaperscraft.ru/image/single/razvody_tekstura_zhidkost_149404_1280x960.jpg');
+  padding: 30px;
+  height:100%;
+  width:100%;
+  text-align: top-center;
+}
+
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-image:url('https://t3.ftcdn.net/jpg/01/82/28/56/360_F_182285617_kfTIkRpFJ72awWcHnogPb5QfbBpgrERS.jpg');
+  position: relative;
+  bottom: 0;
+}
+button {
+  background-color:pink;
+  color:black;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  float:top-center;
+}
+
+button:hover {
+  background-color:palevioletred;
+}
+
+.topnav a:hover {
+  border-bottom: 2px solid palevioletred;
+}
+
+.topnav a.active {
+  border-bottom: 2px solid palevioletred;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width:1000px;
+  height: 500px;
+  margin: 5px;
+  padding: 10px;
+}
+
+.gallery {
+  display: flex;
+  gap: 20px;
+}
+
+.thumbnails {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.thumbnail {
+  width: 50px;
+  height: 50px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.thumbnail.active {
+  border-color: #8B0000;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main-image-container {
+  flex: 1;
+  position: relative;
+  background-color: #8B0000;
+  border-radius: 8px;
+  overflow: hidden;
+  
+}
+
+.main-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+
+
+.text-overlay {
+  position: absolute;
+  inset: 0;
+  padding: 32px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.text2{
+  transform: translateX(2em);
+  max-width: 30rem;
+}
+
+.glossary-word {
+  font-size: 24px;
+  color: #070707;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.glossary-word:hover {
+  color: black;
+}
+
+.glossary-word::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: palevioletred;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.glossary-word:hover::after {
+  transform: scaleX(1);
+}
+
+
